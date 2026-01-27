@@ -136,7 +136,8 @@ const menu_data:IMenuDT[] = [
   {
     id: 5,
     title: 'Kontakt',
-    link: '/kontakt'
+    link: '/kontakt',
+    dropdown_menus: []
   }
 ];
 
@@ -246,6 +247,7 @@ export const mobile_menu_data:{
   {
     id: 5,
     title: 'Kontakt',
-    link: '/kontakt'
+    link: '/kontakt',
+    dropdown_menus: []
   }
 ]
