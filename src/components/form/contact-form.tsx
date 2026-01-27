@@ -33,17 +33,17 @@ export default function ContactForm({btnCls=''}:IProps) {
     <form onSubmit={onSubmit}>
       <div className="cn-contactform-input mb-25">
         <label>Jméno</label>
-        <input id='name' name='name' {...register("name")} type="text" placeholder="Jan Novák" autoComplete="name" />
+        <input id='name' {...register("name")} type="text" placeholder="Jan Novák" autoComplete="name" />
         <ErrorMsg msg={errors.name?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Předmět</label>
-        <input id='subject' name='subject' {...register("subject" )} type="text" placeholder="Váš@email.cz" autoComplete="email" />
+        <input id='subject' {...register("subject" )} type="text" placeholder="Váš@email.cz" autoComplete="email" />
         <ErrorMsg msg={errors.subject?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Zpráva</label>
-        <textarea id='message' name='message' {...register("message")} placeholder="Napište nám, s čím vám můžeme pomoci" autoComplete="on"></textarea>
+        <textarea id='message' {...register("message")} placeholder="Napište nám, s čím vám můžeme pomoci" autoComplete="on"></textarea>
         <ErrorMsg msg={errors.message?.message!} />
       </div>
       <div className="cn-contactform-btn">
