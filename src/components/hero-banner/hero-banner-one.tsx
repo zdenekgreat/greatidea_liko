@@ -26,6 +26,7 @@ const HeroBannerOne = () => {
                   width={790}
                   height={700}
                   style={{ height: "auto" }}
+                  priority
                 />
               </div>
               <div className="tp-hero-title-box text-center p-relative">
@@ -41,6 +42,7 @@ const HeroBannerOne = () => {
                         alt="shape"
                         width={40}
                         height={40}
+                        priority
                       />
                     </span>
                   </span>
@@ -54,6 +56,7 @@ const HeroBannerOne = () => {
                       width={270}
                       height={160}
                       style={{ height: "auto" }}
+                      priority
                     />
                   </span>
                   Studio

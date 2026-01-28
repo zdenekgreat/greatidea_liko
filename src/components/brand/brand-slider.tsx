@@ -26,7 +26,7 @@ export default function BrandSlider() {
       >
         {brand_images.map((b, i) => (
           <div key={i} className="tp-brand-item" style={{ height: "auto",width: "200px" }}>
-            <Image src={b} alt="" />
+            <Image src={b} alt="" width={200} height={80} style={{height:'auto'}} loading="lazy" />
           </div>
         ))}
       </Marquee>
