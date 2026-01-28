@@ -14,7 +14,7 @@ const HeroBannerTwo = () => {
             <div className="tp-hero-2-wrapper-main">
               <div className="tp-hero-2-wrapper d-flex align-items-center p-relative">
                 <div className="tp-hero-2-bg tp-gsap-bg tp-hero-bg-single">
-                  <Image style={{ width: "100%", height: "auto" }} src={hero_bg} alt="hero-bg" />
+                  <Image priority style={{ width: "100%", height: "auto" }} src={hero_bg} alt="hero-bg" />
                 </div>
                 <div className="tp-hero-2-content-wrap p-relative">
                   <div className="tp-hero-2-title-box">

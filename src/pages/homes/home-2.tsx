@@ -1,6 +1,7 @@
 'use client';
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
+import dynamic from "next/dynamic";
 import useScrollSmooth from '@/hooks/use-scroll-smooth';
 import { ScrollSmoother, ScrollTrigger, SplitText } from '@/plugins';
 import { useGSAP } from "@gsap/react";
@@ -11,13 +12,16 @@ import Wrapper from "@/layouts/wrapper";
 import HeaderTwo from "@/layouts/headers/header-two";
 import HeroBannerTwo from "@/components/hero-banner/hero-banner-two";
 import AboutOne from "@/components/about/about-one";
-import VideoTwo from "@/components/video/video-two";
-import ServiceTwo from "@/components/service/service-two";
-import ProjectTwo from "@/components/project/project-two";
-import AwardTwo from "@/components/award/award-two";
-import LineText from "@/components/line-text/line-text";
-import InstagramArea from "@/components/instagram/instagram-area";
-import FooterTwo from "@/layouts/footers/footer-two";
+
+// Dynamické importy pro sekce pod ohybem
+const VideoTwo = dynamic(() => import("@/components/video/video-two"));
+const ServiceTwo = dynamic(() => import("@/components/service/service-two"));
+const ProjectTwo = dynamic(() => import("@/components/project/project-two"));
+const AwardTwo = dynamic(() => import("@/components/award/award-two"));
+const LineText = dynamic(() => import("@/components/line-text/line-text"));
+const InstagramArea = dynamic(() => import("@/components/instagram/instagram-area"));
+const FooterTwo = dynamic(() => import("@/layouts/footers/footer-two"));
+
 // animation
 import { bounceAnimation, heroBgAnimation, heroTitleAnim } from "@/utils/title-animation";
 import { videoAnimTwo } from "@/utils/video-anim";

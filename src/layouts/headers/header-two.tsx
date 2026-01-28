@@ -26,6 +26,7 @@ export default function HeaderTwo() {
                 <div className="tp-header-logo">
                   <Link className="logo-1" href="/">
                     <Image
+                      priority
                       style={{ width: "auto", height: "auto" }}
                       src={logo}
                       alt="logo"
@@ -35,6 +36,7 @@ export default function HeaderTwo() {
                   </Link>
                   <Link className="logo-2" href="/">
                     <Image
+                      priority
                       style={{ width: "auto", height: "auto" }}
                       src={logoWhite}
                       alt="logo"
