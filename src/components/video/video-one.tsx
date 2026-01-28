@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 const VideOne = () => {
 
@@ -22,7 +23,14 @@ const VideOne = () => {
               <source src="https://html.aqlova.com/videos/liko/liko.mp4" type="video/mp4" />
             </video>
           ) : (
-            <img src="/assets/img/home-01/hero/hero-1-1.png" alt="video placeholder" style={{width:'100%',height:'auto'}} />
+            <Image 
+              src="/assets/img/home-01/hero/hero-1-1.png" 
+              alt="video placeholder" 
+              width={0} 
+              height={0} 
+              sizes="100vw" 
+              style={{width:'100%',height:'auto'}} 
+            />
           )}
         </div>
       </div>

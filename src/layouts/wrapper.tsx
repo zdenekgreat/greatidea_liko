@@ -1,10 +1,6 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import BackToTop from "@/components/back-to-top";
-
-if (typeof window !== "undefined") {
-  require("bootstrap/dist/js/bootstrap.bundle.min");
-}
 
 interface WrapperProps {
   children: React.ReactNode;
@@ -12,6 +8,10 @@ interface WrapperProps {
 }
 
 const Wrapper = ({ children, showBackToTop=true }: WrapperProps) => {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min");
+  }, []);
+
   return (
     <React.Fragment>
       {children}

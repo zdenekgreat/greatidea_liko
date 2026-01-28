@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import useScrollSmooth from '@/hooks/use-scroll-smooth';
 import { ScrollSmoother, ScrollTrigger, SplitText, cursorAnimation } from '@/plugins';
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
@@ -14,12 +15,14 @@ import HeaderOne from "@/layouts/headers/header-one";
 import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
 import VideOne from "@/components/video/video-one";
 import BrandOne from "@/components/brand/brand-one";
-import ServiceOne from "@/components/service/service-one";
-import ProjectOne from "@/components/project/project-one";
-import AwardOne from "@/components/award/award-one";
-import TeamOne from "@/components/team/team-one";
-import TestimonialOne from "@/components/testimonial/testimonial-one";
-import FooterOne from "@/layouts/footers/footer-one";
+
+// Dynamické importy pro sekce pod ohybem (snižuje TBT a velikost počátečního balíčku)
+const ServiceOne = dynamic(() => import("@/components/service/service-one"));
+const ProjectOne = dynamic(() => import("@/components/project/project-one"));
+const AwardOne = dynamic(() => import("@/components/award/award-one"));
+const TeamOne = dynamic(() => import("@/components/team/team-one"));
+const TestimonialOne = dynamic(() => import("@/components/testimonial/testimonial-one"));
+const FooterOne = dynamic(() => import("@/layouts/footers/footer-one"));
 
 // images
 import shape_1 from '@/assets/img/home-01/footer/footer-circle-shape-1.png';

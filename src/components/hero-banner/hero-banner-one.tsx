@@ -26,6 +26,7 @@ const HeroBannerOne = () => {
                   width={790}
                   height={700}
                   style={{ height: "auto" }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
               </div>
@@ -56,6 +57,7 @@ const HeroBannerOne = () => {
                       width={270}
                       height={160}
                       style={{ height: "auto" }}
+                      sizes="(max-width: 768px) 50vw, 270px"
                       priority
                     />
                   </span>

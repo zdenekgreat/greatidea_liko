@@ -29,10 +29,10 @@ const HeaderOne = () => {
               <div className="col-xl-2 col-lg-2 col-6">
                 <div className="tp-header-logo">
                   <Link className="logo-1" href="/">
-                    <Image style={{ width: "auto", height: "auto" }} src={logo} alt="logo" width={85} height={26} />
+                    <Image priority style={{ width: "auto", height: "auto" }} src={logo} alt="logo" width={85} height={26} />
                   </Link>
                   <Link className="logo-2" href="/">
-                    <Image style={{ width: "auto", height: "auto" }} src={logoWhite} alt="logo" width={85} height={26} />
+                    <Image priority style={{ width: "auto", height: "auto" }} src={logoWhite} alt="logo" width={85} height={26} />
                   </Link>
                 </div>
               </div>
